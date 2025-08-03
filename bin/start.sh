@@ -35,6 +35,10 @@ export PYTHONHASHSEED=1
 mkdir -p /tmp/numba_cache
 mkdir -p /tmp/librosa_cache
 
+# ✅ Install librosa and dependencies if not already present
+echo "📥 Installing librosa dependencies..."
+pip install --no-cache-dir librosa soundfile audioread numba
+
 # Precompile critical modules to avoid runtime compilation
 echo "📦 Precompiling critical modules..."
 python3 -c "
@@ -50,6 +54,12 @@ import joblib
 print('Loading basic scipy...')
 try:
     from scipy import signal
+except:
+    pass
+
+print('Loading librosa...')
+try:
+    import librosa
 except:
     pass
 

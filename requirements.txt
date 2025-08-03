@@ -1,22 +1,22 @@
 # Core Flask
-Flask==3.0.3
-Flask-CORS==4.0.1
-gunicorn==21.2.0
-Werkzeug==3.0.3
+Flask
+Flask-CORS
+gunicorn
+Werkzeug
 
 # Essential ML libraries (memory optimized versions)
-numpy==1.24.4
-scikit-learn==1.3.2
-joblib==1.3.2
+numpy
+scikit-learn
+joblib
 
 # Audio processing (lightweight)
-librosa==0.10.1
-soundfile==0.12.1
-audioread==3.0.1
-numba==0.57.1
+librosa
+soundfile
+audioread
+numba
 
 # TensorFlow CPU-only (smaller footprint)
-tensorflow-cpu==2.13.0
+tensorflow-cpu
 
 # System utilities
-psutil==5.9.5
+psutil
